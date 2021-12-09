@@ -1,13 +1,14 @@
 # Selenium Webdriver Hybrid Framework
 
 ########## Required things ##########
-  Java 				| writing logic
-  TestNG				| test control and execution
-  Maven 				| dependency resolve by downloading jar files
-  Selenium Webdriver	| browser operations
-  Extent Report		| reporting purpose
+1.  Java 				| writing logic
+2.  TestNG				| test control and execution
+3.  Maven 				| dependency resolve by downloading jar files
+4.  Selenium Webdriver	| browser operations
+5.  Extent Report		| reporting purpose
 
 ########## Future Scope ##########
-  Log4j				| logging activities
-  Page Factory		| maintaining the web elements
-  Data driven framework using excel | JSON data
+
+1.  Log4j				| logging activities
+2.  Page Factory		| maintaining the web elements
+3.  Data driven framework using excel | JSON data
