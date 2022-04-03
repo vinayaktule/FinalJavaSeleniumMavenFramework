@@ -7,6 +7,7 @@
 4.  Selenium Webdriver	| browser operations
 5.  Extent Report		| reporting purpose
 6.  Log4j				| logging activities
+
 ########## Future Scope ##########
 
 
