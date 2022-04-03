@@ -6,9 +6,9 @@
 3.  Maven 				| dependency resolve by downloading jar files
 4.  Selenium Webdriver	| browser operations
 5.  Extent Report		| reporting purpose
-
+6.  Log4j				| logging activities
 ########## Future Scope ##########
 
-1.  Log4j				| logging activities
-2.  Page Factory		| maintaining the web elements
-3.  Data driven framework using excel | JSON data
+
+1.  Page Factory		| maintaining the web elements
+2.  Data driven framework using excel | JSON data
