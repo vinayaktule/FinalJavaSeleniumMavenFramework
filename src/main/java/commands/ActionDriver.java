@@ -1,5 +1,6 @@
 package commands;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -11,23 +12,26 @@ import config.Browser;
 
 public class ActionDriver {
 	WebDriver driver;
-	
+	private static final Logger log = Logger.getLogger(ActionDriver.class);
 	public ActionDriver() {
 		// TODO Auto-generated constructor stub
 		driver = Browser.driver;
+		log.info("Browser is initiated");
 	}
 	
 	public void navigateToApplication(String url) {
 		try {
 			driver.get(url);
 			Browser.childTest.pass("Successfully opened application URL");
+			log.info("Opened application url > "+url);
 		} catch (Exception e) {
 			Browser.childTest.fail("unable to open application URL");
+			log.error("Failed to open url"+url);
 		}
 	
 	}
 	
-	public void click(By locator, String eleName) throws Exception {
+	public void click(By locator, String eleName){
 		try {
 			driver.findElement(locator).click();
 			Browser.childTest.pass("Successfully clicked on : "+eleName);
